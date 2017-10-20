@@ -13,3 +13,13 @@ body {
 .card.bg-secondary {
   margin-top: 1.5em;
 }
+
+a {
+  color: #e44;
+}
+
+a:hover {
+  color: #ea8;
+  font-weight: bolder;
+  text-decoration: none;
+}
