@@ -14,6 +14,10 @@ body {
   margin-top: 1.5em;
 }
 
+#fail {
+  margin-top: 1.5em;
+}
+
 a {
   color: #e44;
 }

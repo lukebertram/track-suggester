@@ -54,9 +54,9 @@ $(document).ready(function(){
     //answer 5 branches
     if (answer5 === "react") {
       reactScore++;
-    } else if (answer4 === "java") {
+    } else if (answer5 === "java") {
       javaScore++;
-    } else if (answer4 === "rails") {
+    } else if (answer5 === "rails") {
       railsScore++;
     } else {
       //no entry
@@ -65,18 +65,24 @@ $(document).ready(function(){
     if (reactScore === javaScore && javaScore === railsScore && reactScore === 0){
       $("#fail").show();
     } else if (reactScore > javaScore && reactScore > railsScore){
+      $("#fail").hide();
       $("#react-track").show();
     } else if (javaScore > reactScore && javaScore > railsScore){
+      $("#fail").hide();
       $("#java-track").show();
     } else if (railsScore > reactScore && railsScore > javaScore ){
+      $("#fail").hide();
       $("#rails-track").show();
     } else if (reactScore === javaScore){
+      $("#fail").hide();
       $("#react-track").show();
       $("#java-track").show();
     } else if (reactScore === railsScore){
+      $("#fail").hide();
       $("#react-track").show();
       $("#rails-track").show();
     } else {
+      $("#fail").hide();
       $("#java-track").show();
       $("#rails-track").show();
     }
