@@ -20,7 +20,6 @@ $(document).ready(function(){
       railsScore++;
     } else {
       //no entry
-      $("");
     }
     //answer 2 branches
     if (answer2 === "react") {
