@@ -5,3 +5,11 @@ body {
 .hidden {
   display: none;
 }
+
+.card-header h1 {
+  margin-bottom: -0.25em;
+}
+
+.card.bg-secondary {
+  margin-top: 1.5em;
+}
